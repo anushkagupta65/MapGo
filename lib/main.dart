@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:map_assessment/src/presentation/screens/map_screen.dart';
 import 'package:map_assessment/src/services/map_service.dart';
 import 'package:provider/provider.dart';
@@ -15,10 +16,12 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MapService(),
       child: MaterialApp(
-        title: 'Flutter Google Maps',
+        debugShowCheckedModeBanner: false,
+        title: 'MapGo',
         darkTheme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: GoogleFonts.raleway().fontFamily,
         ),
         themeMode: ThemeMode.dark,
         home: const MapScreen(),
