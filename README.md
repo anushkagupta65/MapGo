@@ -7,7 +7,7 @@
 
 ## 📌 Summary
 
-This project is the implementation of the **Flutter Google Maps Assessment**, which includes:
+This project is the implementation of the **Google Maps**, which includes:
 
 - Displaying Google Map centered on the user’s current location  
 - Handling location permissions  
@@ -109,7 +109,6 @@ flutter_test:
 ### Assets
 
 ```
-assets/lottie/
 assets/images/
 .env
 ```
@@ -188,17 +187,29 @@ Make sure `.env` exists in the project root.
 
 ## 🖼️ Screenshots
 
-### 📍 App Preview Screens
+<details>
+<summary><strong>📍 App Preview Screens</strong></summary>
+
+<br>
 
 | Map View | Autocomplete | Route Drawing |
 |---------|--------------|---------------|
 | ![img1](https://github.com/user-attachments/assets/81be2d1f-dd33-45a1-96ea-93f82fcb1e86) | ![img2](https://github.com/user-attachments/assets/6d23da66-b331-4159-8203-42132e7e1682) | ![img3](https://github.com/user-attachments/assets/6b724977-5da0-4a59-80f9-c7ef147544fe) |
 
+</details>
+
+---
+
+<details>
+<summary><strong>🚫 Permission Denied Screens</strong></summary>
+
+<br>
 
 | Permission Denied Preview 1 | Permission Denied Preview 2 |
-|-----------------|-----------------|
+|-----------------------------|------------------------------|
 | ![ss4](https://github.com/user-attachments/assets/1877212c-990e-4671-8b20-90a4d1c1425e) | ![ss5](https://github.com/user-attachments/assets/3e374ac4-837d-42fa-ace5-1f03936bca03) |
 
+</details>
 
 
 
