@@ -1,4 +1,4 @@
-# Flutter Google Maps Assessment
+# Google Maps Integration in Flutter — MapGo
 
 **Repository:** https://github.com/anushkagupta65/MapsImpl  
 **Project Name:** `MapGo`
@@ -21,7 +21,6 @@ This project is the implementation of **Google Maps**, which includes:
 - Clear markers  
 - Organized folder architecture (data → models → services → presentation → widgets → utils)
 
-All requirements are fully implemented.
 
 ---
 
@@ -58,7 +57,6 @@ lib/
     └── main.dart
 ```
 
-This architecture separates API, Data, UI, Services, Models, and Utilities.
 
 ---
 
@@ -122,7 +120,7 @@ To run this project, **you must add your Google API key in 3 places**:
 Create a `.env` file:
 
 ```
-GOOGLE_MAPS_API_KEY=YOUR_API_KEY
+API_KEY=YOUR_API_KEY
 ```
 
 Do **NOT** push this file to GitHub.
@@ -142,7 +140,7 @@ Inside the `<application>` tag add:
 ```xml
 <meta-data
     android:name="com.google.android.geo.API_KEY"
-    android:value="${GOOGLE_MAPS_API_KEY}" />
+    android:value="YOUR_API_KEY_HERE"/>
 ```
 
 This allows **Maps SDK** to use your API key for Android.
@@ -160,14 +158,7 @@ ios/Runner/AppDelegate.swift
 Add inside the `didFinishLaunchingWithOptions` method:
 
 ```swift
-GMSServices.provideAPIKey(Bundle.main.object(forInfoDictionaryKey: "GMSApiKey") as! String)
-```
-
-Then ensure your **Info.plist** contains:
-
-```xml
-<key>GMSApiKey</key>
-<string>YOUR_API_KEY</string>
+GMSServices.provideAPIKey("YOUR_API_KEY_HERE")
 ```
 
 ---
@@ -192,7 +183,7 @@ flutter run
 
 Make sure:
 
-- `.env` file exists  
+- `.env` file exists and key is set 
 - AndroidManifest key is set  
 - iOS AppDelegate key is set  
 
